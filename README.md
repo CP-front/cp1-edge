@@ -6,13 +6,20 @@
 <body>
   <h1>🍷 Vinheria Agnello - Sistema de Monitoramento de Luminosidade com Arduino</h1>
 
-  <p>Projeto desenvolvido para o Checkpoint 01 da disciplina <strong>Edge Computing & Computer Systems</strong> do curso de <strong>Engenharia de Software - FIAP</strong>.</p>
+  <p>Projeto desenvolvido para o Checkpoint 1 da disciplina <strong>Edge Computing & Computer Systems</strong> do curso de <strong>Engenharia de Software - FIAP</strong>.</p>
 
   <h2>🧠 Objetivo</h2>
   <p>Desenvolver um sistema embarcado com <strong>Arduino</strong> para <strong>monitorar os níveis de luminosidade</strong> no ambiente onde os vinhos são armazenados, visando preservar sua qualidade. O sistema deve sinalizar visual e sonoramente os diferentes níveis de luz, além de exibir informações em um <strong>display LCD</strong>.</p>
 
+  <h2>💻 Circuito</h2>
+  <p align="center">
+  <img src="./cp1-visionary-solutions/img/img-circuito2.png" width="500" alt="Circuito do projeto no WokWI">
+  </p>
+
   <h2>⚙️ Funcionalidades</h2>
   <ul>
+    <li>▶ Botão para Inicialização do SETUP de luminosidade com sensor LDR</li>
+    <li>🔃 Conversão das leituras do sensor em escala percentual (0% a 100%)</li>
     <li>💡 Monitoramento contínuo da luminosidade com sensor LDR</li>
     <li>🟢🟡🔴 Indicação visual com LEDs para níveis de luz:
       <ul>
@@ -29,16 +36,17 @@
   <h2>🧰 Componentes Utilizados</h2>
   <table border="1" cellspacing="0" cellpadding="4">
     <tr><th>Componente</th><th>Quantidade</th><th>Função</th></tr>
-    <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador do sistema</td></tr>
-    <tr><td>Sensor LDR</td><td>1</td><td>Sensor de luminosidade (entrada analógica)</td></tr>
-    <tr><td>Resistor 10kΩ</td><td>1</td><td>Pull-down para o LDR</td></tr>
-    <tr><td>Resistor 220Ω</td><td>3</td><td>para os LEDs</td></tr>
-    <tr><td>LED Verde</td><td>1</td><td>Indica condição ideal</td></tr>
-    <tr><td>LED Amarelo</td><td>1</td><td>Indica alerta</td></tr>
-    <tr><td>LED Vermelho</td><td>1</td><td>Indica problema</td></tr>
-    <tr><td>Buzzer</td><td>1</td><td>Alarme sonoro em caso de alerta</td></tr>
-    <tr><td>Display LCD 16x2</td><td>1</td><td>Exibição da logo, status e boas-vindas</td></tr>
-    <tr><td>Potenciômetro (10kΩ)</td><td>1</td><td>Ajuste de contraste do LCD</td></tr>
+    <tr><td>Arduino Uno</td><td>1x</td><td>Microcontrolador do sistema</td></tr>
+    <tr><td>Sensor LDR</td><td>1x</td><td>Sensor de luminosidade (entrada analógica)</td></tr>
+    <tr><td>Resistor 10kΩ</td><td>1x</td><td>Pull-down para o LDR</td></tr>
+    <tr><td>Resistor 220Ω</td><td>3x</td><td>para os LEDs</td></tr>
+    <tr><td>LED Verde</td><td>1x</td><td>Indica condição ideal</td></tr>
+    <tr><td>LED Amarelo</td><td>1x</td><td>Indica alerta</td></tr>
+    <tr><td>LED Vermelho</td><td>1x</td><td>Indica problema</td></tr>
+    <tr><td>Push Button</td><td>1x</td><td>Botão para Iniciar</td></tr>
+    <tr><td>Buzzer</td><td>1x</td><td>Alarme sonoro em caso de alerta</td></tr>
+    <tr><td>Display LCD 16x2</td><td>1x</td><td>Exibição da logo, status e boas-vindas</td></tr>
+    <tr><td>Potenciômetro (10kΩ)</td><td>1x</td><td>Ajuste de contraste do LCD</td></tr>
     <tr><td>Jumpers e Protoboard</td><td>Diversos</td><td>Conexões elétricas</td></tr>
   </table>
 
@@ -60,8 +68,8 @@
     <li>Com base nesse valor:
       <ul>
         <li>0% a 30%: LED verde aceso</li>
-        <li>31% a 70%: LED amarelo aceso + buzzer por 3s</li>
-        <li>Acima de 70%: LED vermelho aceso + buzzer por 1s</li>
+        <li>31% a 70%: LED amarelo aceso + buzzer por 3s repetidamente</li>
+        <li>Acima de 70%: LED vermelho aceso + buzzer por 1s repetidamente</li>
       </ul>
     </li>
     <li>O LCD exibe a porcentagem de luz e o status atual.</li>
@@ -77,14 +85,13 @@ cp1-edge/
         ├── img-circuito1.png
         └── img-circuito2.png
 ├── README.md                # Este arquivo
-├── wokwi-project.txt        # Link para simulação no Wokwi
-└── video_apresentacao.mp4   # Vídeo explicativo (até 3 minutos)
+└── wokwi-project.txt        # Link para simulação no Wokwi
   </code></pre>
 
   <h2>🔁 Como Reproduzir</h2>
   <p><strong>Requisitos:</strong></p>
   <ul>
-    <li>Conta no <a href="https://www.wokwi.com/" target="_blank">Wokwi</a></li>
+    <li>Plataforma: Conta no <a href="https://www.wokwi.com/" target="_blank">Wokwi</a> ou Arduino IDE</li>
     <li>Arduino Uno virtual</li>
     <li>Componentes listados acima</li>
   </ul>
@@ -98,7 +105,7 @@ cp1-edge/
   </ol>
 
   <h2>🎥 Vídeo Explicativo</h2>
-  <p>📺 Assista ao vídeo explicando o projeto: <a href="#">Link para o vídeo</a></p>
+  <p>📺 Assista ao vídeo explicando o projeto: <a href="https://youtu.be/cHEGjUd7ReA?si=izw_A7UFyjOyZd-2">Link para o vídeo</a></p>
 
   <h2>👨‍💻 Autoria</h2>
   <p>Projeto desenvolvido por <strong>Visionary Solutions</strong><br>
