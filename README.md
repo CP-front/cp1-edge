@@ -22,7 +22,7 @@
       </ul>
     </li>
     <li>🔊 Alarme com buzzer em nível de alerta</li>
-    <li>📟 Display LCD com mensagem de boas-vindas e status atual</li>
+    <li>📟 Display LCD com a logo <strong>Visionary Solutions</strong>, mensagem de boas-vindas e status atual</li>
     <li>🔁 Leitura periódica com atualização a cada segundo</li>
   </ul>
 
@@ -32,11 +32,12 @@
     <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador do sistema</td></tr>
     <tr><td>Sensor LDR</td><td>1</td><td>Sensor de luminosidade (entrada analógica)</td></tr>
     <tr><td>Resistor 10kΩ</td><td>1</td><td>Pull-down para o LDR</td></tr>
+    <tr><td>Resistor 220Ω</td><td>1</td><td>para os LEDs</td></tr>
     <tr><td>LED Verde</td><td>1</td><td>Indica condição ideal</td></tr>
-    <tr><td>LED Amarelo</td><td>1</td><td>Indica condição de alerta</td></tr>
-    <tr><td>LED Vermelho</td><td>1</td><td>Indica condição crítica</td></tr>
+    <tr><td>LED Amarelo</td><td>1</td><td>Indica alerta</td></tr>
+    <tr><td>LED Vermelho</td><td>1</td><td>Indica problema</td></tr>
     <tr><td>Buzzer</td><td>1</td><td>Alarme sonoro em caso de alerta</td></tr>
-    <tr><td>Display LCD 16x2</td><td>1</td><td>Exibição de status e boas-vindas</td></tr>
+    <tr><td>Display LCD 16x2</td><td>1</td><td>Exibição da logo, status e boas-vindas</td></tr>
     <tr><td>Potenciômetro (10kΩ)</td><td>1</td><td>Ajuste de contraste do LCD</td></tr>
     <tr><td>Jumpers e Protoboard</td><td>Diversos</td><td>Conexões elétricas</td></tr>
   </table>
@@ -45,8 +46,9 @@
   <p><strong>Resumo do circuito:</strong></p>
   <ul>
     <li>O LDR está conectado ao pino A0 do Arduino, com resistor de 10kΩ ao GND.</li>
-    <li>LEDs: pinos 2 (verde), 3 (amarelo), 4 (vermelho)</li>
-    <li>Buzzer: pino 5</li>
+    <li>LEDs: pinos 4 (verde), 5 (amarelo), 6 (vermelho)</li>
+    <li>Buzzer: pino 3</li>
+    <li>Botão Iniciar: pino 2</li>
     <li>LCD: pinos 7 a 12</li>
     <li>Potenciômetro ajusta o contraste no pino V0 do LCD</li>
   </ul>
@@ -88,7 +90,7 @@ cp1-edge/
   </ul>
   <p><strong>Passos:</strong></p>
   <ol>
-    <li>Acesse o <a href="#">link da simulação no Wokwi</a>.</li>
+    <li>Acesse o <a href="https://wokwi.com/projects/428951775872440321">link da simulação no Wokwi</a>.</li>
     <li>Copie o código para o editor de código.</li>
     <li>Monte o circuito conforme o esquema.</li>
     <li>Clique em "Iniciar Simulação".</li>
