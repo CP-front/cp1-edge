@@ -32,7 +32,7 @@
     <tr><td>Arduino Uno</td><td>1</td><td>Microcontrolador do sistema</td></tr>
     <tr><td>Sensor LDR</td><td>1</td><td>Sensor de luminosidade (entrada analógica)</td></tr>
     <tr><td>Resistor 10kΩ</td><td>1</td><td>Pull-down para o LDR</td></tr>
-    <tr><td>Resistor 220Ω</td><td>1</td><td>para os LEDs</td></tr>
+    <tr><td>Resistor 220Ω</td><td>3</td><td>para os LEDs</td></tr>
     <tr><td>LED Verde</td><td>1</td><td>Indica condição ideal</td></tr>
     <tr><td>LED Amarelo</td><td>1</td><td>Indica alerta</td></tr>
     <tr><td>LED Vermelho</td><td>1</td><td>Indica problema</td></tr>
@@ -60,8 +60,8 @@
     <li>Com base nesse valor:
       <ul>
         <li>0% a 30%: LED verde aceso</li>
-        <li>31% a 60%: LED amarelo aceso + buzzer</li>
-        <li>Acima de 60%: LED vermelho aceso</li>
+        <li>31% a 70%: LED amarelo aceso + buzzer por 3s</li>
+        <li>Acima de 70%: LED vermelho aceso + buzzer por 1s</li>
       </ul>
     </li>
     <li>O LCD exibe a porcentagem de luz e o status atual.</li>
