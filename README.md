@@ -67,18 +67,22 @@
 
   <h2>🛠 Estrutura do Projeto</h2>
   <pre><code>
-VinheriaAgnello/
-├── codigo.ino               # Código-fonte comentado (Arduino C++)
+cp1-edge/
+└── cp1-visionary-solutions
+    ├── cp1-edge.ino               # Código-fonte comentado (Arduino C++)
+    ├── diagram.json               
+    └── img/                       # Prints do circuito e LCD
+        ├── img-circuito1.png
+        └── img-circuito2.png
 ├── README.md                # Este arquivo
-├── tinkercad_link.txt       # Link para simulação no Tinkercad
-├── video_apresentacao.mp4   # Vídeo explicativo (até 3 minutos)
-└── imagens/                 # Prints do circuito e LCD (opcional)
+├── wokwi-project.txt        # Link para simulação no Wokwi
+└── video_apresentacao.mp4   # Vídeo explicativo (até 3 minutos)
   </code></pre>
 
   <h2>🔁 Como Reproduzir</h2>
   <p><strong>Requisitos:</strong></p>
   <ul>
-    <li>Conta no <a href="https://www.wokwi.com/" target="_blank">Tinkercad</a></li>
+    <li>Conta no <a href="https://www.wokwi.com/" target="_blank">Wokwi</a></li>
     <li>Arduino Uno virtual</li>
     <li>Componentes listados acima</li>
   </ul>
