@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Vinheria Agnello - Monitoramento com Arduino</title>
 </head>
 <body>
   <h1>🍷 Vinheria Agnello - Sistema de Monitoramento de Luminosidade com Arduino</h1>
@@ -79,13 +78,13 @@ VinheriaAgnello/
   <h2>🔁 Como Reproduzir</h2>
   <p><strong>Requisitos:</strong></p>
   <ul>
-    <li>Conta no <a href="https://www.tinkercad.com/" target="_blank">Tinkercad</a></li>
+    <li>Conta no <a href="https://www.wokwi.com/" target="_blank">Tinkercad</a></li>
     <li>Arduino Uno virtual</li>
     <li>Componentes listados acima</li>
   </ul>
   <p><strong>Passos:</strong></p>
   <ol>
-    <li>Acesse o <a href="#">link da simulação no Tinkercad</a>.</li>
+    <li>Acesse o <a href="#">link da simulação no Wokwi</a>.</li>
     <li>Copie o código para o editor de código.</li>
     <li>Monte o circuito conforme o esquema.</li>
     <li>Clique em "Iniciar Simulação".</li>
