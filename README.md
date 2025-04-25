@@ -94,14 +94,6 @@ VinheriaAgnello/
   <h2>🎥 Vídeo Explicativo</h2>
   <p>📺 Assista ao vídeo explicando o projeto: <a href="#">Link para o vídeo</a></p>
 
-  <h2>✨ Possíveis Melhorias Futuras</h2>
-  <ul>
-    <li>Adicionar sensores de temperatura e umidade</li>
-    <li>Envio de dados para nuvem com ESP8266</li>
-    <li>Log histórico de luminosidade</li>
-    <li>Interface web para visualização remota</li>
-  </ul>
-
   <h2>👨‍💻 Autoria</h2>
   <p>Projeto desenvolvido por <strong>Visionary Solutions</strong><br>
   Equipe: Arthur Araujo Tenorio, Breno Gonçalves Báo, Rodrigo Cardoso Tadeo, Vinicius Cavalcanti dos Reis<br>
